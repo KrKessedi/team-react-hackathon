@@ -1,0 +1,27 @@
+.card__inner {
+	padding: 30px;
+}
+
+.card__inner2 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1vw;
+}
+
+.card-icons {
+	display: flex;
+}
+
+.author-text {
+	/* margin-top: 1vw; */
+}
+
+.btn-block {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5vw;
+}
+
+.addToFavorite {
+}

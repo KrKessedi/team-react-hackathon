@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.canvas-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 4vw;
+}
+body {
+	background: #191a1e;
+}
+
+.instrument-draw {
+	clip-path: polygon(0 14%, 99% 0%, 100% 87%, 25% 100%, 0 93%);
+	background-color: yellow;
+	width: 17em;
+	height: 36em;
+	margin-left: 2em;
+}
+
+#download_image_link {
+	color: #0f56db;
+	margin-top: 2em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* body {
+	height: 100vh;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+.gradient-border {
+	--border-width: 3px;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lato', serif;
+	color: white;
+	font-size: 46px;
+	text-transform: uppercase;
+	background: #222;
+	border-radius: var(--border-width);
+	margin-top: 2vw;
+}
+.gradient-border::after {
+	position: absolute;
+	content: '';
+	top: calc(-1 * var(--border-width));
+	left: calc(-1 * var(--border-width));
+	width: calc(100% + var(--border-width) * 2);
+	height: calc(100% + var(--border-width) * 2);
+	z-index: -1;
+	background-image: linear-gradient(
+		60deg,
+		#5f86f2,
+		#a65ff2,
+		#f25fd0,
+		#f25f61,
+		#f2cb5f,
+		#abf25f,
+		#5ff281,
+		#5ff2f0
+	);
+	background-size: 300% 300%;
+	background-position: 0 50%;
+	border-radius: calc(2 * var(--border-width));
+	animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+.instrument-draw__inner {
+	/* width: 20vw;
+	height: 30vw; */
+	padding-top: 5.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.instrument-draw__inner-color {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 11em;
+}
+
+.color-draw {
+	width: 40px !important;
+	height: 40px !important;
+	margin: 5px !important;
+}
+.range {
+	/* width: 400px;
+	height: 15px; */
+	-webkit-appearance: none;
+	background: #111;
+	outline: none;
+	border-radius: 15px;
+	/* overflow: hidden; */
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+.range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #00fd0a;
+	cursor: pointer;
+	border: 4px solid #333;
+	/* box-shadow: -407px 0 0 400px #00fd0a; */
+	cursor: none;
+}

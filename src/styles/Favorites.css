@@ -1,0 +1,32 @@
+.favorites {
+  background: linear-gradient(110deg, #214, #000, #123, #000, #321);
+  /* width: 80vw; */
+  /* height: 1780px; */
+  padding-top: 10vw;
+  margin-top: -8vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 10vw;
+}
+
+.relativeCard {
+  color: beige !important;
+  position: relative;
+}
+
+.subCard {
+  position: absolute;
+  box-shadow: 0 0 150px yellowgreen;
+  border-radius: 1vw;
+  width: 21vw;
+  height: 21vw;
+  left: 2vw;
+  top: 1.5vw;
+}
+
+
+.fav-image:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}

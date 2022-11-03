@@ -1,0 +1,10 @@
+.basket {
+  background: #191a1e !important;
+  /* width: 100vw; */
+  height: 100vh;
+  color: white !important;
+  margin-top: -5.8vw !important;
+  margin-bottom: 0 !important;
+  padding-top: 11vw !important;
+  border-radius: 0 !important;
+}

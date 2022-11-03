@@ -1,0 +1,38 @@
+@media all and (max-width: 733px) {
+	.input2 {
+		padding: 0.2em;
+	}
+	.select2 {
+		padding: 0.2em;
+	}
+	.block-add {
+		/* width: 30vw; */
+	}
+	.price2 {
+		width: 4em;
+	}
+	.field:after {
+		bottom: 0.4em;
+	}
+	.desc2 {
+		height: 5em;
+	}
+}
+
+@media all and (max-width: 520px) {
+	.title-add {
+		width: 7.7em;
+	}
+	.desc2 {
+		height: 5em;
+	}
+	.create-block {
+		font-size: 1.5em;
+	}
+}
+
+@media all and (max-width: 420px) {
+	.create-block {
+		font-size: 1.2em;
+	}
+}

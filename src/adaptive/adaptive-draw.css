@@ -1,0 +1,49 @@
+@media all and (max-width: 880px) {
+	.gradient-border {
+		width: 300px;
+		height: 300px;
+	}
+	.canvas-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.instrument-draw {
+		margin: 0;
+		margin-top: 5vw;
+		width: 500px;
+		height: 300px;
+		clip-path: polygon(
+			18% 0,
+			82% 0,
+			100% 22%,
+			100% 82%,
+			82% 100%,
+			18% 100%,
+			0 82%,
+			0 22%
+		);
+	}
+	.instrument-draw__inner {
+		padding-top: 1vw;
+		/* flex-direction: row; */
+	}
+	.instrument-adaptive {
+		display: flex;
+		/* flex-wrap: wrap; */
+	}
+}
+
+@media all and (max-width: 540px) {
+	.instrument-draw {
+		width: 300px;
+		height: 300px;
+		clip-path: none;
+		border-radius: 10px;
+	}
+	.instrument-adaptive {
+		font-size: 12px;
+	}
+	#download_image_link {
+		margin-top: 3vw;
+	}
+}
